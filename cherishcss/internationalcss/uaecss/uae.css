@@ -1,0 +1,127 @@
+body{
+    background:#333333; 
+}
+header{
+    width: 100%;
+    min-height: 100%;
+    /* -----background----- */
+    background:linear-gradient(#111111,#333333);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    /* ------background end--- */
+ }
+/* ----------------carousel---------- */
+.carousel{
+    width: 60%;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.slider{
+    width: 100%;
+    /* border: solid; */
+    position: relative;
+}
+.carousel-item{
+    min-width: 100%;
+    display: none;
+    border-radius: 2%;
+    
+    /* border: #ffc007 solid 3px; */
+    box-shadow: black 5px 5px 5px ;
+}
+
+.active-item{
+    display: block;
+    animation: fadevisi 2s;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 2%
+    
+}
+
+.carousel-nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    /* border:  solid; */
+    transition: opacity 300ms;
+    
+}
+.carousel-nav:hover{
+    opacity: 1;
+}
+.nav-btn{
+    font-size: 2rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: rgba(0,0,0,0.3);
+    margin: 10px;
+    color: white;
+    box-shadow: black 2px 2px 2px ;
+    border: none;
+
+}
+.nav-btn:hover{
+    color:#ffc007
+}
+
+
+@media(max-width:710px){
+    .carousel-item img{
+        height: 230px;
+    }
+    .carousel{
+        height: 400px;
+    }
+   
+    #tag{
+        text-align: center;
+        
+    }
+}
+
+
+@keyframes fadevisi{
+    0% {
+        opacity: 0;
+      
+      }
+      100% {
+        opacity: 1;
+      }
+     
+    }
+/* --------------carousel end----------- */
+
+/* ____________typography___________________ */
+.text{
+    width:80%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    /* font-size: 0.5rem; */
+    letter-spacing: 3px;
+
+
+}
+#tag{
+    font-family: 'Raleway', sans-serif;
+    color: #ffc007;
+    font-size: 2.5rem;
+    text-shadow: black 1px 1px 5px, rgba(255, 255, 0, 0.658) 1px 1px 2px;
+}

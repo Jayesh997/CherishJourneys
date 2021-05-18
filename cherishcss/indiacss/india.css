@@ -1,0 +1,189 @@
+
+header{
+    width: 100%;
+    min-height: 100vh;
+    /* -----background----- */
+    background: linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(/cherishimage/india/indiaBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* ------background end--- */
+    }
+
+
+/* ------------dropdown nav menus start------ */
+    .nav-menu{
+        /* margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center; */
+        width: 100%;
+        top: -150vh;
+        z-index: 25;
+        position: fixed;
+        background:linear-gradient(rgba(0,0,0,0),rgba(66, 173, 159, 0.459))  ;
+        backdrop-filter: blur(10px);
+        transition: all 700ms ease-out;
+    }
+    
+    
+/* ------------dropdown nav menus end------ */
+
+.bottom-col{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+@media(max-width:910px){
+
+    .bottom-col{
+        flex-direction: column;
+    }
+
+    #tag-line{
+        text-align: center;
+        /* margin-left: 30px;
+        margin-bottom: 30px; */
+        
+        font-size: 2rem;
+    }
+    .sub-title{
+        font-size: 0.5rem;
+    }
+        
+    }
+    /* ----------header section end--------- */
+        
+
+    main{
+        width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(rgba(0, 0, 0, 0.514),#333333);
+    }
+    main h1{
+        background: rgba(0, 0, 0,0.3);
+        border: white solid 2px ;
+        border-radius: 5%;
+        padding: .2em;
+        text-shadow: black 1px 1px 5px, rgba(255, 255, 0, 0.658) 1px 1px 2px;
+    }
+    main h1:hover{
+        background: rgba(0, 0, 0,0.8);
+        border-color:#ffc007 ;
+    }
+    .main-link{
+        text-decoration: none;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        
+        height: 25em;
+      
+    }
+    .image:hover{
+        color:#ffc007 ;
+    }
+
+.image-east{
+    width: 45%;
+    background: linear-gradient(rgba(209, 170, 207, 0.418), rgba(39, 39, 39, 0.1)), url(/cherishimage/india/east/east.jfif);  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+
+    transition:  600ms ease-in-out;
+}
+.image-east:hover{
+    background:  linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0,0.2)), url(/cherishimage/india/east/east.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    
+    
+}
+.image-west{  
+    width: 45%;
+    background: linear-gradient(rgba(25, 173, 124, 0.253), rgba(0, 0, 0, 0.521)), url(/cherishimage/india/west/west.jfif); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    transition:  600ms ease-in-out;
+
+}
+.image-west:hover{
+    background:   linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(/cherishimage/india/west/west.jfif); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    
+    
+}
+.image-south{
+    width: 55%;
+    background: linear-gradient(rgba(202, 169, 21, 0.247), rgba(49, 56, 155,0)), url(/cherishimage/india/south/south.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    transition:  600ms ease-in-out;
+}
+.image-south:hover{
+    background:  linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(/cherishimage/india/south/south.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    
+}
+.image-north{
+    width: 55%;
+    background: linear-gradient(rgba(144, 209, 40, 0.1), rgba(144, 209, 40,0.1)), url(/cherishimage/india/north/north.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    transition:  600ms ease-in-out;
+    
+}
+.image-north:hover{
+    background:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.3)), url(/cherishimage/india/north/north.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    
+}
+
+@media(max-width:710px){
+    main{
+        flex-direction: column;
+    }
+    .image{
+        width: 100%;
+        height: 20em;
+    }
+}
+/* ------------Main Section end------------- */
+.line{    
+    margin: 0;
+    width: 100%;
+    height: 2.5px;
+background:linear-gradient(to left, #333333,#ffc007,#333333);
+}
+
+    
+   
+    /* --------info-end------- */
+    
+    .line2{    
+        margin: 0;
+        width: 2.5px;
+        height: 40vh;
+       background:linear-gradient( #333333,#ffc007,#333333);
+    }
+    /* -----form start----- */
+    
+    
+    
