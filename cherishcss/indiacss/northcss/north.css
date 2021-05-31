@@ -1,9 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
     /* -------------Header Section start-------- */
     header{
         width: 100%;
-        min-height: 120vh;
+        min-height: 120%;
          /* -----background----- */
+         background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 36, 71, 0.582)), to(rgba(49, 56, 155,0))), url(/cherishimage/india/north/north.jfif);
+         background: -o-linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(/cherishimage/india/north/north.jfif);
          background: linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(/cherishimage/india/north/north.jfif);
          background-size: cover;
          background-repeat: no-repeat;
@@ -24,21 +33,36 @@
             top: -150vh;
             z-index: 25;
             position: fixed;
+            background:-webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0)),to(rgba(196, 127, 49, 0.459)))  ;
+            background:-o-linear-gradient(rgba(0,0,0,0),rgba(196, 127, 49, 0.459))  ;
             background:linear-gradient(rgba(0,0,0,0),rgba(196, 127, 49, 0.459))  ;
-            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+                    backdrop-filter: blur(10px);
+            -webkit-transition: all 700ms ease-out;
+            -o-transition: all 700ms ease-out;
             transition: all 700ms ease-out;
         }      
         
         /* -------------------------------------- */
         .bottom-col{
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
         }
         @media(max-width:910px){
     
             .bottom-col{
-                flex-direction: column;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
             }
         
             #tag-line{
@@ -57,10 +81,19 @@
             /* --------Main Section start-------------------- */
     main{
         width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.514)),to(#333333));
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.514),#333333);
     background: linear-gradient(rgba(0, 0, 0, 0.514),#333333);
     }
     main h1{
@@ -78,9 +111,15 @@
         text-decoration: none;
     }
     .image{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         color: white;
         
         height: 25em;
@@ -93,13 +132,19 @@
 
     .image-agra{
         width: 45%;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(209, 170, 207, 0.418)), to(rgba(39, 39, 39, 0.1))), url(/cherishimage/india/north/agra/1.jfif);
+        background: -o-linear-gradient(rgba(209, 170, 207, 0.418), rgba(39, 39, 39, 0.1)), url(/cherishimage/india/north/agra/1.jfif);
         background: linear-gradient(rgba(209, 170, 207, 0.418), rgba(39, 39, 39, 0.1)), url(/cherishimage/india/north/agra/1.jfif);  
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center;
+        -webkit-transition:  600ms ease-in-out;
+        -o-transition:  600ms ease-in-out;
         transition:  600ms ease-in-out;
     }
     .image-agra:hover{
+        background:  -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0, 0.2)), to(rgba(0,0,0,0.2))), url(/cherishimage/india/north/agra/1.jfif);
+        background:  -o-linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0,0.2)), url(/cherishimage/india/north/agra/1.jfif);
         background:  linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0,0.2)), url(/cherishimage/india/north/agra/1.jfif);
         background-size: cover;
         background-repeat: no-repeat;
@@ -111,14 +156,20 @@
 
     .image-delhi{  
         width: 55%;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 173, 124, 0.253)), to(rgba(0, 0, 0, 0.521))), url(/cherishimage/india/north/delhi/1.jfif);
+        background: -o-linear-gradient(rgba(25, 173, 124, 0.253), rgba(0, 0, 0, 0.521)), url(/cherishimage/india/north/delhi/1.jfif);
         background: linear-gradient(rgba(25, 173, 124, 0.253), rgba(0, 0, 0, 0.521)), url(/cherishimage/india/north/delhi/1.jfif); 
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center;
+        -webkit-transition:  600ms ease-in-out;
+        -o-transition:  600ms ease-in-out;
         transition:  600ms ease-in-out;
     
     }
     .image-delhi:hover{
+        background:   -webkit-gradient(linear, left top, left bottom, from(rgba(34, 36, 71, 0.582)), to(rgba(49, 56, 155,0))), url(/cherishimage/india/north/delhi/1.jfif);
+        background:   -o-linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(/cherishimage/india/north/delhi/1.jfif);
         background:   linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(/cherishimage/india/north/delhi/1.jfif); 
         background-size: cover;
         background-repeat: no-repeat;
@@ -130,13 +181,19 @@
 
     .image-hp{
         width: 55%;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(202, 169, 21, 0.247)), to(rgba(49, 56, 155,0))), url(/cherishimage/india/north/himachal/1.jfif);
+        background: -o-linear-gradient(rgba(202, 169, 21, 0.247), rgba(49, 56, 155,0)), url(/cherishimage/india/north/himachal/1.jfif);
         background: linear-gradient(rgba(202, 169, 21, 0.247), rgba(49, 56, 155,0)), url(/cherishimage/india/north/himachal/1.jfif);
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center;
+        -webkit-transition:  600ms ease-in-out;
+        -o-transition:  600ms ease-in-out;
         transition:  600ms ease-in-out;
     }
     .image-hp:hover{
+        background:  -webkit-gradient(linear, left top, left bottom, from(rgba(34, 36, 71, 0.582)), to(rgba(49, 56, 155,0))), url(/cherishimage/india/north/himachal/1.jfif);
+        background:  -o-linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(/cherishimage/india/north/himachal/1.jfif);
         background:  linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(/cherishimage/india/north/himachal/1.jfif);
         background-size: cover;
         background-repeat: no-repeat;
@@ -147,14 +204,20 @@
 
     .image-kashmir{
         width: 45%;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(144, 209, 40, 0.1)), to(rgba(144, 209, 40,0.1))), url(/cherishimage/india/north/kashmir/1.jfif);
+        background: -o-linear-gradient(rgba(144, 209, 40, 0.1), rgba(144, 209, 40,0.1)), url(/cherishimage/india/north/kashmir/1.jfif);
         background: linear-gradient(rgba(144, 209, 40, 0.1), rgba(144, 209, 40,0.1)), url(/cherishimage/india/north/kashmir/1.jfif);
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center;
+        -webkit-transition:  600ms ease-in-out;
+        -o-transition:  600ms ease-in-out;
         transition:  600ms ease-in-out;
         
     }
     .image-kashmir:hover{
+        background:  -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0,0,0,0.3))), url(/cherishimage/india/north/kashmir/1.jfif);
+        background:  -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.3)), url(/cherishimage/india/north/kashmir/1.jfif);
         background:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.3)), url(/cherishimage/india/north/kashmir/1.jfif);
         background-size: cover;
         background-repeat: no-repeat;
@@ -165,14 +228,20 @@
 
     .image-leh{
         width: 45%;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(144, 209, 40, 0.1)), to(rgba(144, 209, 40,0.1))), url(/cherishimage/india/north/leh/1.jfif);
+        background: -o-linear-gradient(rgba(144, 209, 40, 0.1), rgba(144, 209, 40,0.1)), url(/cherishimage/india/north/leh/1.jfif);
         background: linear-gradient(rgba(144, 209, 40, 0.1), rgba(144, 209, 40,0.1)), url(/cherishimage/india/north/leh/1.jfif);
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center;
+        -webkit-transition:  600ms ease-in-out;
+        -o-transition:  600ms ease-in-out;
         transition:  600ms ease-in-out;
         
     }
     .image-leh:hover{
+        background:  -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0,0,0,0.3))), url(/cherishimage/india/north/leh/1.jfif);
+        background:  -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.3)), url(/cherishimage/india/north/leh/1.jfif);
         background:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.3)), url(/cherishimage/india/north/leh/1.jfif);
         background-size: cover;
         background-repeat: no-repeat;
@@ -183,14 +252,20 @@
     
     .image-raj{
         width: 55%;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(144, 209, 40, 0.1)), to(rgba(144, 209, 40,0.1))), url(/cherishimage/india/north/rajasthan/1.jfif);
+        background: -o-linear-gradient(rgba(144, 209, 40, 0.1), rgba(144, 209, 40,0.1)), url(/cherishimage/india/north/rajasthan/1.jfif);
         background: linear-gradient(rgba(144, 209, 40, 0.1), rgba(144, 209, 40,0.1)), url(/cherishimage/india/north/rajasthan/1.jfif);
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center;
+        -webkit-transition:  600ms ease-in-out;
+        -o-transition:  600ms ease-in-out;
         transition:  600ms ease-in-out;
         
     }
     .image-raj:hover{
+        background:  -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0,0,0,0.3))), url(/cherishimage/india/north/rajasthan/1.jfif);
+        background:  -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.3)), url(/cherishimage/india/north/rajasthan/1.jfif);
         background:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.3)), url(/cherishimage/india/north/rajasthan/1.jfif);
         background-size: cover;
         background-repeat: no-repeat;
@@ -201,14 +276,20 @@
     
     .image-uk{
         width: 55%;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(144, 209, 40, 0.1)), to(rgba(144, 209, 40,0.1))), url(/cherishimage/india/north/uttrakhand/1.jfif);
+        background: -o-linear-gradient(rgba(144, 209, 40, 0.1), rgba(144, 209, 40,0.1)), url(/cherishimage/india/north/uttrakhand/1.jfif);
         background: linear-gradient(rgba(144, 209, 40, 0.1), rgba(144, 209, 40,0.1)), url(/cherishimage/india/north/uttrakhand/1.jfif);
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center;
+        -webkit-transition:  600ms ease-in-out;
+        -o-transition:  600ms ease-in-out;
         transition:  600ms ease-in-out;
         
     }
     .image-uk:hover{
+        background:  -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0,0,0,0.3))), url(/cherishimage/india/north/uttrakhand/1.jfif);
+        background:  -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.3)), url(/cherishimage/india/north/uttrakhand/1.jfif);
         background:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.3)), url(/cherishimage/india/north/uttrakhand/1.jfif);
         background-size: cover;
         background-repeat: no-repeat;
@@ -219,14 +300,20 @@
     
     .image-varanasi{
         width: 45%;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(144, 209, 40, 0.1)), to(rgba(144, 209, 40,0.1))), url(/cherishimage/india/north/varanasi/1.jfif);
+        background: -o-linear-gradient(rgba(144, 209, 40, 0.1), rgba(144, 209, 40,0.1)), url(/cherishimage/india/north/varanasi/1.jfif);
         background: linear-gradient(rgba(144, 209, 40, 0.1), rgba(144, 209, 40,0.1)), url(/cherishimage/india/north/varanasi/1.jfif);
         background-size: cover;
         background-repeat: no-repeat;
         background-position:center;
+        -webkit-transition:  600ms ease-in-out;
+        -o-transition:  600ms ease-in-out;
         transition:  600ms ease-in-out;
         
     }
     .image-varanasi:hover{
+        background:  -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0,0,0,0.3))), url(/cherishimage/india/north/varanasi/1.jfif);
+        background:  -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.3)), url(/cherishimage/india/north/varanasi/1.jfif);
         background:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.3)), url(/cherishimage/india/north/varanasi/1.jfif);
         background-size: cover;
         background-repeat: no-repeat;
@@ -236,7 +323,10 @@
 
     @media(max-width:710px){
         main{
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
         }
         .image{
             width: 100%;
@@ -248,6 +338,8 @@
         margin: 0;
         width: 100%;
         height: 2.5px;
+    background:-webkit-gradient(linear, right top, left top, from(#333333),color-stop(#ffc007),to(#333333));
+    background:-o-linear-gradient(right, #333333,#ffc007,#333333);
     background:linear-gradient(to left, #333333,#ffc007,#333333);
     }
         
@@ -257,6 +349,8 @@
             margin: 0;
             width: 2.5px;
             height: 40vh;
+           background:-webkit-gradient( linear,left top, left bottom,from(#333333),color-stop(#ffc007),to(#333333));
+           background:-o-linear-gradient( #333333,#ffc007,#333333);
            background:linear-gradient( #333333,#ffc007,#333333);
         }
       
