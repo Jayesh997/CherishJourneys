@@ -2,7 +2,7 @@
     /* -------------Header Section start-------- */
     header{
         width: 100%;
-        min-height: 100vh;
+        min-height: 140vh;
         /* -----background----- */
         background: linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(/cherishimage/india/east/east.jfif);
         background-size: cover;

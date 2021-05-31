@@ -1,7 +1,7 @@
 
 header{
     width: 100%;
-    min-height: 100vh;
+    min-height: 120vh;
     /* -----background----- */
     background: linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(/cherishimage/india/indiaBackground.jpg);
     background-size: cover;

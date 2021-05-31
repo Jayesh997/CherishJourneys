@@ -1,5 +1,21 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 
-@keyframes slideInFromLeft {
+
+@-webkit-keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+    
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes slideInFromLeft {
     0% {
       opacity: 0;
     
@@ -10,7 +26,8 @@
   }
   header {  
     /* This section calls the slideInFromLeft animation we defined above */
-    animation: 1.5s ease-out 0s 1 slideInFromLeft;
+    -webkit-animation: 1.5s ease-out 0s 1 slideInFromLeft;
+            animation: 1.5s ease-out 0s 1 slideInFromLeft;
     
     background: #333;
     
@@ -49,8 +66,10 @@ body{
 /* -------------Header Section start-------- */
 header{
     width: 100%;
-    min-height: 100vh;
+    min-height: 120%;
     /* -----background----- */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 36, 71, 0.582)), to(rgba(49, 56, 155,0))), url(../cherishimage/indexBackground.jpg);
+    background: -o-linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(../cherishimage/indexBackground.jpg);
     background: linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(../cherishimage/indexBackground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -62,8 +81,12 @@ header{
     .nav-bar{
         width: 90%;
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .nav-bar a{
     width: 50%;
@@ -75,9 +98,15 @@ header{
 
     .hamburger{
         width: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .hamburger h1{
@@ -103,7 +132,10 @@ header{
 @media(max-width:910px){
     
     .bottom-col{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     #tag-line{
@@ -129,8 +161,13 @@ header{
         top: -150vh;
         z-index: 25;
         position: fixed;
+        background:-webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0)),to(rgba(211, 208, 59, 0.5)))  ;
+        background:-o-linear-gradient(rgba(0,0,0,0),rgba(211, 208, 59, 0.5))  ;
         background:linear-gradient(rgba(0,0,0,0),rgba(211, 208, 59, 0.5))  ;
-        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+        -webkit-transition: all 700ms ease-out;
+        -o-transition: all 700ms ease-out;
         transition: all 700ms ease-out;
     }
     #cross{
@@ -150,10 +187,19 @@ header{
         /* margin: 0 auto; */
         width: 90%;
         height: 100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .nav-item{
         /* background:rgba(0,0,0,0.3) ; */
@@ -192,10 +238,19 @@ header{
         margin-bottom: 230px;
         margin-left: auto;
         margin-right: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     /* ----------top-column------- */
     .top-col{
@@ -222,9 +277,15 @@ header{
     .bottom-col{
         width: 100%;
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .sub-title{
@@ -301,11 +362,16 @@ header{
 
     @media(max-width:910px){
         .top-col{
-            justify-content: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
             
         }
         .bottom-col{
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
         }
         #tag-line{
             text-align: center;
@@ -330,6 +396,8 @@ header{
         margin: 0;
         width: 100%;
         height: 2.5px;
+    background:-webkit-gradient(linear, right top, left top, from(#333333),color-stop(#ffc007),to(#333333));
+    background:-o-linear-gradient(right, #333333,#ffc007,#333333);
     background:linear-gradient(to left, #333333,#ffc007,#333333);
     }
 
@@ -340,10 +408,20 @@ header{
     padding: 10px;
    
     z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     width: 100%;
+
+    background:-webkit-gradient(linear,left top, left bottom,from(#333333),to(#111111));
+
+    background:-o-linear-gradient(#333333,#111111);
 
     background:linear-gradient(#333333,#111111);
     
@@ -365,6 +443,8 @@ header{
     margin: 0;
     width: 2.5px;
     height: 40vh;
+   background:-webkit-gradient( linear,left top, left bottom,from(#333333),color-stop(#ffc007),to(#333333));
+   background:-o-linear-gradient( #333333,#ffc007,#333333);
    background:linear-gradient( #333333,#ffc007,#333333);
 }
 /* -----form start----- */
@@ -393,7 +473,8 @@ header{
 
 .form-field{
     background: none;
-    box-shadow: inset #ffc007 1px 1px 2px, white 1px 1px 2px  ;
+    -webkit-box-shadow: inset #ffc007 1px 1px 2px, white 1px 1px 2px  ;
+            box-shadow: inset #ffc007 1px 1px 2px, white 1px 1px 2px  ;
     width: 100%;
     /* height: 30px; */
     margin: 0;
@@ -406,7 +487,8 @@ header{
 .form-button{
     /* border: white solid 2px; */
     color:#ffc007 ;
-    box-shadow: inset #ffc007 1px 1px 2px, white 1px 1px 2px  ;
+    -webkit-box-shadow: inset #ffc007 1px 1px 2px, white 1px 1px 2px  ;
+            box-shadow: inset #ffc007 1px 1px 2px, white 1px 1px 2px  ;
     letter-spacing: 7px;
     font-size: 1rem;
    background: rgba(0,0,0,0.4);
@@ -435,9 +517,19 @@ header{
     }
     .cta{
       
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+      
+        -webkit-box-direction: normal;
+      
+            -ms-flex-direction: column;
+      
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
    
     .line2{
@@ -456,18 +548,35 @@ header{
 #footer{
     width: 100%;
     padding-top: 100px;
+    background:-webkit-gradient(linear,left top, left bottom,from(#111111),to(#030303));
+    background:-o-linear-gradient(#111111,#030303);
     background:linear-gradient(#111111,#030303);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     overflow-x: hidden;
 }
 .socialmedia{
     margin: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .socialmedia-style{
     font-size: 1.5rem;
@@ -488,9 +597,15 @@ header{
 .copyright{
     font-size: 0.6rem;
     letter-spacing: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     
 }
 
@@ -499,4 +614,3 @@ header{
 }
 
 /* -------------------------INDEX PAGE END---------------------------- */
-
