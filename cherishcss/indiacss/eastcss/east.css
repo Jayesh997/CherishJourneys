@@ -7,17 +7,20 @@
 
 
     /* -------------Header Section start-------- */
+    body{
+    /* -----background----- */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 36, 71, 0.582)), to(rgba(49, 56, 155,0))), url(/cherishimage/india/east/east.jfif);
+    background: -o-linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(/cherishimage/india/east/east.jfif);
+    background: linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(/cherishimage/india/east/east.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* ------background end--- */
+    }
     header{
         width: 100%;
         min-height: 130%;
-        /* -----background----- */
-        background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 36, 71, 0.582)), to(rgba(49, 56, 155,0))), url(/cherishimage/india/east/east.jfif);
-        background: -o-linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(/cherishimage/india/east/east.jfif);
-        background: linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(/cherishimage/india/east/east.jfif);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        /* ------background end--- */
+        background: transparent;
         }
     
     

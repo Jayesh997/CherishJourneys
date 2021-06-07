@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-html, body, div, span, applet, object,
+/* html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
@@ -21,7 +21,6 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	/* font: inherit; */
-	vertical-align: baseline;}
 
 @-webkit-keyframes slideInFromLeft {
   0% {
@@ -73,12 +72,6 @@ body {
 
   color: white;
   font-family: "Raleway", sans-serif;
-}
-/* -------------Header Section start-------- */
-header {
-  width: 100%;
-  min-height: 120%;
-  /* -----background----- */
   background: -webkit-gradient(
       linear,
       left top,
@@ -95,6 +88,13 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   /* ------background end--- */
+}
+/* -------------Header Section start-------- */
+header {
+  width: 100%;
+  min-height: 120%;
+  /* -----background----- */
+  background: transparent;
 }
 /* ---------- Main NAV BAR------- */
 

@@ -7,10 +7,7 @@
 
 
     /* -------------Header Section start-------- */
-    header{
-        width: 100%;
-        min-height: 120%;
-
+    body{
          /* -----background----- */
          background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 36, 71, 0.582)), to(rgba(49, 56, 155,0))), url(/cherishimage/india/west/west.jfif);
          background: -o-linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(/cherishimage/india/west/west.jfif);
@@ -19,6 +16,13 @@
          background-repeat: no-repeat;
          background-position: center;
          /* ------background end--- */
+
+    }
+    header{
+        width: 100%;
+        min-height: 120%;
+        background: transparent;
+        
         }
    
     /* ------------dropdown nav menus start------ */
