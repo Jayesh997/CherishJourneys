@@ -16,7 +16,7 @@ nextBtn.addEventListener("click",function(){
 
 setInterval(function(){
     addActiveNext();
-    console.log("hello");
+    // console.log("hello");
 }, 4000);
 
 function findPlace(){

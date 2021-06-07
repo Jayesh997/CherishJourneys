@@ -8,7 +8,8 @@
 
 header{
     width: 100%;
-    min-height: 120%;
+    height: auto;
+    /* min-height: 120%; */
     /* -----background----- */
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 36, 71, 0.582)), to(rgba(49, 56, 155,0))), url(/cherishimage/india/indiaBackground.jpg);
     background: -o-linear-gradient(rgba(34, 36, 71, 0.582), rgba(49, 56, 155,0)), url(/cherishimage/india/indiaBackground.jpg);
