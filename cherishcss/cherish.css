@@ -462,6 +462,24 @@ header {
 .info-email {
   margin: 10px 0px;
 }
+
+@media (max-width: 910px){
+  .info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .info-title {
+      z-index: 0;
+      color: #ffc007;
+      font-size: 1 rem;
+    }
+    .info-email {
+      margin: 0;
+    }
+
+}
 /* --------info-end------- */
 
 .line2 {
