@@ -449,7 +449,10 @@ header {
 
   background: linear-gradient(#333333, #111111);
 }
-
+.cta a {
+  text-decoration: none;
+  color: #ffc007;
+}
 /* -------info----- */
 .info-title {
   z-index: 0;
