@@ -614,7 +614,19 @@
     }
   
     .line2 {
-      display: none;
+      margin-top: 30px;
+      width: 60%;
+      height: 2.5px;
+      background: -webkit-gradient(
+        linear,
+        right top,
+        left top,
+        from(#333333),
+        color-stop(#ffc007),
+        to( #333333)
+      );
+      background: -o-linear-gradient(right, #333333, #ffc007, #333333);
+      background: linear-gradient(to left, #333333, #ffc007, #333333);
     }
     .form-title {
       position: relative;
