@@ -47,6 +47,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color:#333333 ;
   }
   body {
     width: 100%;
@@ -54,7 +55,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-  
+    background-color:#333333 ;
     color: white;
     font-family: "Raleway", sans-serif;
     background: -o-linear-gradient(rgba(34, 36, 71, 0.582), rgba(0, 0, 0, 0.678)),
