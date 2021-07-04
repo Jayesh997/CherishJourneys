@@ -650,6 +650,11 @@ header {
   /* color:#423e32; */
   /* text-shadow:  #ffc107b2 1px 1px; */
   cursor: pointer;
+  color: white;
+  
+}
+ a{
+  text-decoration: none;
 }
 .socialmedia-icons:hover {
   color: #ffc007;
