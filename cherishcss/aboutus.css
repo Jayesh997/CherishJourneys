@@ -424,6 +424,10 @@
     background: -o-linear-gradient(#575757, #333333);
     background: linear-gradient(#575757, #333333);
   }
+
+.testimonial{
+  margin-top: 100px ;
+} 
   .wrap{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -448,6 +452,7 @@
 
 .cta1 h3{
     color: #ffc007;
+    margin-bottom: 0;
 }
 .test-container{
     /* border: rgb(88, 88, 88) solid; */
@@ -887,6 +892,7 @@ header{
   /* font-size: 0.5rem; */
   letter-spacing: 3px;
   text-align: center;
+  /* margin-bottom: 80px; */
 
 
 }
