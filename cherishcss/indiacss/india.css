@@ -136,9 +136,9 @@ header{
 
 .image-east{
     width: 45%;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(209, 170, 207, 0.418)), to(rgba(39, 39, 39, 0.1))), url(/cherishimage/india/east/east.jfif);
-    background: -o-linear-gradient(rgba(209, 170, 207, 0.418), rgba(39, 39, 39, 0.1)), url(/cherishimage/india/east/east.jfif);
-    background: linear-gradient(rgba(209, 170, 207, 0.418), rgba(39, 39, 39, 0.1)), url(/cherishimage/india/east/east.jfif);  
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(209, 170, 207, 0.418)), to(rgba(39, 39, 39, 0.1))), url(/cherishimage/india/east/1.jpg);
+    background: -o-linear-gradient(rgba(209, 170, 207, 0.418), rgba(39, 39, 39, 0.1)), url(/cherishimage/india/east/1.jpg);
+    background: linear-gradient(rgba(209, 170, 207, 0.418), rgba(39, 39, 39, 0.1)), url(/cherishimage/india/east/1.jpg);  
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -150,9 +150,9 @@ header{
     transition:  600ms ease-in-out;
 }
 .image-east:hover{
-    background:  -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0, 0.2)), to(rgba(0,0,0,0.2))), url(/cherishimage/india/east/east.jfif);
-    background:  -o-linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0,0.2)), url(/cherishimage/india/east/east.jfif);
-    background:  linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0,0.2)), url(/cherishimage/india/east/east.jfif);
+    background:  -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0, 0.2)), to(rgba(0,0,0,0.2))), url(/cherishimage/india/east/1.jpg);
+    background:  -o-linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0,0.2)), url(/cherishimage/india/east/1.jpg);
+    background:  linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0,0.2)), url(/cherishimage/india/east/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
