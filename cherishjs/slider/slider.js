@@ -17,7 +17,7 @@ nextBtn.addEventListener("click",function(){
 setInterval(function(){
     addActiveNext();
     // console.log("hello");
-}, 4000);
+}, 5000);
 
 function findPlace(){
     for(let i=0; i<carouselItem.length; i++){

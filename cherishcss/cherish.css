@@ -678,4 +678,192 @@ header {
   color: #ffc007;
 }
 
+/* ------------Testimonials ------------------ */
+.cta1{
+  padding: 10px;
+ 
+  /* flex-direction: column; */
+background: -webkit-gradient(linear, left top, left bottom, from(#575757), to(#333333));
+background: -o-linear-gradient(#575757, #333333);
+background: linear-gradient(#575757, #333333);
+}
+
+.testimonial{
+  margin-top: 100px ;
+} 
+  .wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .cta1 h1{
+      
+      color: #ffc007;
+      /* text-shadow: black 1px 1px 4px; */
+      text-align: center;
+      text-shadow: black 1px 1px 5px, rgba(255, 255, 0, 0.658) 1px 1px 2px;
+}
+
+.cta1 h3{
+    color: #ffc007;
+    margin-bottom: 0;
+}
+.test-container{
+    /* border: rgb(88, 88, 88) solid; */
+    border-radius: 2%;
+    -webkit-box-shadow:rgb(31, 31, 31) 1px 1px 5px 5px;
+            box-shadow:rgb(31, 31, 31) 1px 1px 5px 5px;
+    background:  -webkit-gradient(linear, left top, left bottom, from(rgb(63, 63, 63)), to(#575757));
+    background:  -o-linear-gradient(rgb(63, 63, 63), #575757);
+    background:  linear-gradient(rgb(63, 63, 63), #575757);
+    width: 100%;
+    /* margin: 10px; */
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+            box-sizing: border-box;
+}
+
+
+/* ----------------carousel---------- */
+.carousel{
+  width: 40%;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+}
+.slider{
+  width: 100%;
+  /* border: solid; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-item{
+  min-width: 100%;
+  display: none;
+  border-radius: 2%;
+  
+  
+  /* border: #ffc007 solid 3px; */
+  /* -webkit-box-shadow: black 5px 5px 5px ; */
+          /* box-shadow: black 5px 5px 5px ; */
+}
+
+.active-item{
+  display: block;
+  -webkit-animation: fadevisi 2s;
+          animation: fadevisi 2s;
+        
+}
+
+
+
+.carousel-nav{
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
+  /* border:  solid; */
+  -webkit-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  transition: opacity 300ms;
+  
+}
+.carousel-nav:hover{
+  opacity: 1;
+}
+.nav-btn{
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: rgba(0,0,0,0.3);
+  margin: 10px;
+  color: white;
+  -webkit-box-shadow: black 2px 2px 2px ;
+          box-shadow: black 2px 2px 2px ;
+  border: none;
+
+}
+.nav-btn:hover{
+  color:#ffc007
+}
+
+
+@media(max-width:710px){
+  
+  .carousel{
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+  }
+  #tag{
+      text-align: center;
+      
+  }
+}
+
+
+@-webkit-keyframes fadevisi{
+  0% {
+      opacity: 0;
+    
+    }
+    100% {
+      opacity: 1;
+    }
+   
+  }
+
+
+@keyframes fadevisi{
+  0% {
+      opacity: 0;
+    
+    }
+    100% {
+      opacity: 1;
+    }
+   
+  }
+/* --------------carousel end----------- */
+
 /* -------------------------INDEX PAGE END---------------------------- */
