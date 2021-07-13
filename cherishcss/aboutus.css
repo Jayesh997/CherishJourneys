@@ -292,8 +292,8 @@
     margin-right: 0;
     /* margin-left: 30px; */
     /* min-width: 280px; */
-    font-size: 0.8rem;
-    letter-spacing: 5px;
+    font-size: 1rem;
+    letter-spacing: 3px;
     /* border: solid; */
   }
 
@@ -787,6 +787,10 @@ header{
 }
 .nav-btn:hover{
   color:#ffc007
+}
+#tag{
+  text-align: center;
+  
 }
 
 
